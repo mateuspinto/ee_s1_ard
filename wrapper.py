@@ -90,7 +90,7 @@ class S1ARDImageCollection:
         clip_to_roi: bool = False,
         save_asset: bool = False,
         asset_id: str = "",
-        dem: Optional[ee.Image] = "USGS/SRTMGL1_003",
+        dem: str = "USGS/SRTMGL1_003",
     ) -> None:
         if polarization not in ["VV", "VH", "VVVH"]:
             raise ValueError("Invalid polarization")
